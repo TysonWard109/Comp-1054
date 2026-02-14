@@ -1,0 +1,71 @@
+@charset "utf-8";
+html {
+	box-sizing: border-box;
+}
+	*, *::before, *::after {
+	box-sizing: inherit;
+}
+html{
+    display: grid;
+    /*image credit to chat gpt, just had it strip the words on the album cover and tried to make it match the best i could */
+    background:url("/Assignment-1/imgs/ADTR.png"
+    ) no-repeat top left;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+main{
+    grid-area:section;
+    display:flex;
+    padding:2rem;
+    background-color:hsla(0, 0%, 100%, 0.691);
+
+    
+}
+body{
+    grid-template-areas:
+		"header header header"
+		"section section section"
+		"aside aside aside"
+		"footer footer footer";
+    grid-area: body;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    font-family: 'Source Serif 4' , serif;
+    /* background-color: #111; */
+    color: rgb(10, 0, 0);
+    line-height: 1.6;
+    padding: 2rem;
+    font-weight:300;
+}
+h1, h2 {
+    color: black;;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+header{
+    grid-area: header;
+    justify-content:center;
+    background-color:hsla(0, 0%, 100%, 0.691);
+    width:100%
+}
+section h3{
+    color: black;
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
+}
+aside{
+    background-color:hsla(0, 0%, 100%, 0.691);
+
+    grid-area:aside;
+    text-align:center;
+
+}
+footer{
+    background-color:hsla(0, 0%, 100%, 0.691);
+    grid-area:footer;
+    text-align:center;
+}   
