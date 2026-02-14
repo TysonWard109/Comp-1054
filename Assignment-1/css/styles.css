@@ -8,7 +8,7 @@ html {
 html{
     display: grid;
     /*image credit to chat gpt, just had it strip the words on the album cover and tried to make it match the best i could */
-    background:url("Assignment-1/imgs/ADTR.png"
+    background:url("../imgs/ADTR.png"
     ) no-repeat top left;
     background-size: cover;
     background-attachment: fixed;
