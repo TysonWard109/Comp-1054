@@ -1,0 +1,39 @@
+/* Assignment 2 CSS */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background: #c8c1b7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#111;
+    line-height:1.25;
+}
+
+#container {
+    max-width: 800px;
+    margin: 24px auto;
+    background: #fff;
+    padding: 14px 18px 0;
+    box-shadow: 2px 3px 14px rgba(0,0,0,0.50)
+}
+
+header{
+    margin-bottom: 5px;
+}
+
+header h1{
+    display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+    font-weight:bold;
+    letter-spacing: 0.25em;
+    text-transform:uppercase;
+    color: #c64301;
+    border-left: 1.5px solid gray;
+    border-right: 1.5px solid gray;
+    padding:2px 0;
+}
