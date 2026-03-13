@@ -114,3 +114,29 @@ article > p:last-of-type {
     grid-row: 9;
 }
 
+/* Q&A typography */
+
+article > h2:not(:first-of-type) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1rem;
+    font-weight: bold;
+    line-height:1.25;
+    color: #0a0a0a;
+    margin-top:4px;
+}
+article > p:not(:first-of-type):not(:last-of-type){
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color:#111;
+    margin-bottom: 2px;
+}
+
+article > p:last-of-type{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align:right;
+    margin-top: 4px;
+    padding-bottom: 2px;
+}
