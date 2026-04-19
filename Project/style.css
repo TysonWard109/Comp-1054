@@ -1,36 +1,24 @@
-/* Going for an aquatic theme */
+/* Going for an Aquatic Theme :) */
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Nunito:wght@400;600;700&display=swap');
 
-/* Importing Google Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
-
-
-
-*, *::before, ::after{
+*, ::before, ::after{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html{
   scroll-behavior: smooth;
 }
-
 body{
-  background-color:#020B18;
-  color: #e0f4ff;
-  font-family: 'Nunito', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 350;
-  line-height:1.8;
-  min-height: 100vh;
-  background-image: radial-gradient(ellipse at 20% 40% rgba(0,100,150,0.20) 0% transparent 50%), radial-gradient(ellipse at 80% 20% rgba(0,100,150,0.20) 0% transparent 50%), radial-gradient(ellipse at 50% 80% rgba(0,100,150,0.20) 0% transparent 40%);
-}
-body::after{
-  content: '';
-  position: fixed;
-  inset:0;
-  background:radial-gradient(ellipse at center, transparent 40%, rgba(1,4,12,0.5) 100%);
-  pointer-events: none;
-  z-index: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #020B18;
+  color: #E0F4FF;
+  line-height: 1.8;
+  background-image:
+    radial-gradient(circle at 50% -10%, #1E40AF, transparent 60%),
+    radial-gradient(circle at 0% 100%, #064E3B, transparent 50%);
+  background-attachment:fixed;
+  min-height:100vh;
 }
