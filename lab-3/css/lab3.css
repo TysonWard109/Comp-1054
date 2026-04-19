@@ -15,4 +15,36 @@ html {
 #container {
 	width: 80%;
 	margin: 0 auto;
+
+}
+div#container {
+min-width: 720px;
+max-width: 1024px;
+margin: 0 auto;
+}
+div li {
+list-style-type: none;
+justify-content: center;
+display:flex;
+margin: 0;
+padding: 0;
+}
+div li {
+margin:0px 2.5px;
+}
+div li {
+	display: block;
+	padding: 0.5em;
+	background: #ccc;
+	border: 3px solid ;
+	text-decoration: none;
+	color: #000;
+	border-radius: 5px 5px 0 0;
+}
+div li :hover {
+	background: #fff;
+}
+div li #selected {
+	background: #fff;
+	border-bottom: 3px solid white;
 }
