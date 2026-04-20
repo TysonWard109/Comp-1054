@@ -79,12 +79,12 @@ a{
 }
 a:hover{
   color: #FFF;
-  text-shadow: 0 0 15px(#FFB703);
+  text-shadow: 0 0 15px#FFB703;
 }
 
 /* Mobile layout */
 .container{
-  width:min(110px, 90%);
+  width:min(1100px, 90%);
   margin: 0 auto;
 }
 header{
@@ -95,9 +95,9 @@ nav{
   position:sticky;
   top:0;
   z-index:100;
-  background: rgba (2, 11, 24, 0.8);
+  background: rgba(2, 11, 24, 0.8);
   backdrop-filter:blur(15px);
-  border-bottom:1px solid rbga(255, 255, 255, 0.2);
+  border-bottom:1px solid rgba(255, 255, 255, 0.2);
 }
 nav ul{
   display: flex;
@@ -134,3 +134,83 @@ article{
   0%,100%{ transform: translateY(0);}
   50%{ transform: translateY(-10px);}
 }
+
+section.container{
+  padding:0;
+  background:transparent;
+  border: none;
+  box-shadow:none;
+}
+
+blockquote{
+  border-left:4px solid #5EEAD4;
+  padding: 1.5rem;
+  background: rgba(95, 234, 212, 0.5);
+  font-style:italic;
+  margin:2rem 0;
+}
+
+/*footer*/
+.page-footer{
+  text-align:center;
+  padding:5rem 0;
+  background: rgba(0,0,0,0.3);
+}
+.page-footer ul{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+/* Desktop Grid layout */
+@media (min-width:1000px){
+  body{
+    display:grid;
+    grid-template-columns: 1fr 350px;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main profile"
+    "main styles"
+    "footer footer";
+    gap: 0 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: start;
+  }
+  header{ grid-area: header;}
+  nav{ grid-area: nav;}
+  main{
+    grid-area: main;
+    padding-top:3rem;
+    grid-row: 3/5;
+  }
+  aside.profile{
+    grid-area:profile;
+    margin-top:3rem;
+    position: sticky;
+    top: 100px;
+  }
+  aside#styles{
+    grid-area: styles;
+    position:relative;
+    z-index:1;
+  }
+  .page-footer{grid-area: footer;}
+
+  nav ul{
+    flex-direction:row;
+    justify-content: center;
+    gap:3rem;
+    position:static;
+    background-color:transparent;
+    border:none;
+    padding:0;
+  }
+  header{
+    text-align:left;
+    padding: 8rem 0 4rem 0;
+  }
+  }
