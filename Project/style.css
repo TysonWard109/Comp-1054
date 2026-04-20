@@ -214,3 +214,29 @@ blockquote{
     padding: 8rem 0 4rem 0;
   }
   }
+
+  /* Button styles */
+  .link-github, .link-guidelines, .line-allstyles{
+    display:inline-block;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #5EEAD4;
+    border-radius:50px;
+    text-transform:uppercase;
+    font-size:0.75rem;
+    font-weight:bold;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+  }
+  .link-github:hover{
+    background: #5EEAD4;
+    color:#1E40AF;
+    box-shadow: 0 0 20px #5EEAD4;
+  }
+
+  svg{
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+    margin-right: 8px;
+    vertical-align: middle;
+  } 
